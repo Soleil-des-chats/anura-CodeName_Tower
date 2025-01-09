@@ -66,7 +66,7 @@ jobs:
         with:
           key: ${{ github.job }}-ubuntu-${{ matrix.ubuntu }}-${{ matrix.compiler }}-${{ matrix.build-type }}
 
-      - name: Build Prep Anura
+      - name: Build Preperation Anura
         run: |
           cmake buildsystem/linux-dynamic \
           -D CMAKE_CXX_COMPILER="${{ matrix.compiler }}" \
